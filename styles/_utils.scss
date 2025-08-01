@@ -1,0 +1,12 @@
+@use 'helpers' as *;
+
+.header-hidden {
+    @include show;
+
+    transition-duration: 0.3s;
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
