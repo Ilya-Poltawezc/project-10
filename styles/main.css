@@ -273,6 +273,29 @@ svg * {
   overflow: hidden !important;
 }
 
+.imgOne-translate {
+  transform: translateX(25.3125rem) scale(0.8) !important;
+  z-index: 1;
+  opacity: 0.7;
+  border-radius: 0.625rem;
+  transition-duration: var(--transition-duration);
+}
+
+.img2 {
+  transform: translateX(-20%) scale(0.9);
+  z-index: 2;
+  opacity: 0.7;
+  border-radius: 0.625rem;
+}
+
+.img3 {
+  opacity: 1;
+  transform: translateX(-140%) scale(1.19) !important;
+  z-index: 1;
+  border-radius: 0.625rem;
+  transition-duration: var(--transition-duration);
+}
+
 body {
   font-size: clamp(1.5rem, 1.7417355372rem + -0.9917355372vw, 0.75rem);
   display: flex;
@@ -554,6 +577,64 @@ h3 {
   height: 1.5625rem;
   color: var(--color-light);
   background: url("../../icons/scroll down.svg") center/100% no-repeat;
+}
+
+.what {
+  padding-top: 11.6875rem;
+  padding-left: 7.5rem;
+  padding-right: 8.5rem;
+  padding-bottom: 9.375rem;
+  display: grid;
+  grid-template-columns: 40% auto;
+  column-gap: 1.875rem;
+  background: url("../../images/what/bg.png") center/cover no-repeat;
+}
+.what__title-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+}
+.what__title-block--description {
+  text-transform: uppercase;
+}
+.what__title-block--title {
+  text-transform: uppercase;
+  padding-bottom: 0.625rem;
+  border-bottom: 0.0625rem solid var(--color-light);
+}
+.what__title-description {
+  padding-top: 3.75rem;
+}
+.what__body {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+.what__body-img1 {
+  opacity: 1;
+  transform: translateX(18.75rem) scale(1);
+  z-index: 3;
+  border-radius: 0.625rem;
+}
+.what__body-img2 {
+  transform: translateX(-20%) scale(0.9);
+  z-index: 2;
+  opacity: 0.7;
+  border-radius: 0.625rem;
+}
+.what__body-img3 {
+  transform: translateX(-115%) scale(0.9);
+  z-index: 1;
+  opacity: 0.7;
+  border-radius: 0.625rem;
+}
+.what__body-button {
+  position: absolute;
+  right: 2.5rem;
+  background-color: transparent;
+  border: none;
+  color: var(--color-light);
 }
 
 /*# sourceMappingURL=main.css.map */

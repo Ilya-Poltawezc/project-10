@@ -1,0 +1,72 @@
+@use '../helpers' as *;
+
+.what {
+    padding-top: rem(187);
+    padding-left: rem(120);
+    padding-right: rem(136);
+    padding-bottom: rem(150);
+    display: grid;
+    grid-template-columns: 40% auto;
+    column-gap: rem(30);
+    background: url('../../images/what/bg.png') center/cover no-repeat;
+
+    &__title {
+        //width: rem(553);
+
+        &-block {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(10);
+
+            &--description {
+                text-transform: uppercase;
+            }
+
+            &--title {
+                text-transform: uppercase;
+                padding-bottom: rem(10);
+                border-bottom: rem(1) solid var(--color-light);
+            }
+        }
+
+        &-description {
+            padding-top: rem(60);
+        }
+    }
+
+    &__body {
+        position: relative;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+
+        &-img1 {
+            opacity: 1;
+            transform: translateX(rem(300)) scale(1);
+            z-index: 3;
+            border-radius: rem(10);
+        }
+
+        &-img2 {
+            transform: translateX(-20%) scale(0.9);
+            z-index: 2;
+            opacity: 0.7;
+            border-radius: rem(10);
+        }
+
+        &-img3 {
+            transform: translateX(-115%) scale(0.9);
+            z-index: 1;
+            opacity: 0.7;
+            border-radius: rem(10);
+        }
+
+        &-button {
+            position: absolute;
+            right: rem(40);
+            background-color: transparent;
+            border: none;
+            color: var(--color-light);
+        }
+    }
+}
