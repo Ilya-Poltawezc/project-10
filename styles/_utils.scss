@@ -1,9 +1,24 @@
 @use 'helpers' as *;
 
-.header-hidden {
-    @include show;
+.menu-hidden {
+    @include hide;
 
-    transition-duration: 0.3s;
+    transition-duration: 0.3s
+}
+
+.button-hidden {
+    @include hide;
+}
+
+.header-hidden {
+    @include mobile {
+        @include show;
+        
+        width: rem(140);
+        background-color: var(--color-orange);
+        border-radius: rem(10);
+        transition-duration: var(--transition-duration)     
+    }
 }
 
 .visually-hidden {
