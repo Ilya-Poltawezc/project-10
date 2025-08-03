@@ -10,6 +10,14 @@
     column-gap: rem(30);
     background: url('../../images/what/bg.png') center/cover no-repeat;
 
+    @include laptop {
+        grid-template-columns: 1fr;
+        row-gap: rem(52);
+        padding-left: 0;
+        padding-right: 0;
+        padding-inline: rem(37);
+    }
+
     &__title {
         //width: rem(553);
 
@@ -45,6 +53,15 @@
             transform: translateX(rem(300)) scale(1);
             z-index: 3;
             border-radius: rem(10);
+
+            @include laptop {
+                transform: translateX(30px);
+            }
+
+            @include mobile {
+                width: rem(225);
+                height: rem(273);
+            }
         }
 
         &-img2 {
@@ -52,6 +69,16 @@
             z-index: 2;
             opacity: 0.7;
             border-radius: rem(10);
+
+            @include laptop {
+                transform: translateX(-85%);
+            }
+
+            @include mobile {
+                width: rem(196);
+                height: rem(252);
+                transform: translateX(-80%);
+            }
         }
 
         &-img3 {
@@ -59,6 +86,16 @@
             z-index: 1;
             opacity: 0.7;
             border-radius: rem(10);
+
+            @include laptop {
+                transform: translateX(-178%);
+            }
+
+            @include mobile {
+                width: rem(196);
+                height: rem(229);
+                transform: translateX(-175%);
+            }
         }
 
         &-button {
@@ -67,6 +104,18 @@
             background-color: transparent;
             border: none;
             color: var(--color-light);
+
+            @include laptop {
+                right: 30%;
+            }
+
+            @include tablet {
+                right: 5%;
+            }
+
+            @include mobile {
+                right: -2%;
+            }
         }
     }
 }
