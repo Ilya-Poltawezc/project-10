@@ -49,6 +49,7 @@ h1 {
 
 h2 {
     @include fluid-text(36, 21);
+    letter-spacing: 2px
 }
 
 h3 {

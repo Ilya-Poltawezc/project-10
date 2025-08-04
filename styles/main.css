@@ -229,7 +229,7 @@ svg * {
   --transition-duration: 0.2s;
   --border: rem(1) solid var(--color-grey);
   --box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.75);
-  --radial-gradient: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%);
+  --radial-gradient: radial-gradient(33.26% 45% at 54% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%);
   --linear-gredient: linear-gradient(rgba(0, 0, 0, 0.164));
 }
 @media (width <= 90.06125rem) {
@@ -326,6 +326,16 @@ svg * {
   }
 }
 
+.open {
+  max-height: 500px;
+  transition: max-height 0.5s;
+}
+
+.button-active {
+  background-color: var(--color-light) !important;
+  transition-duration: 0.2s;
+}
+
 body {
   font-size: clamp(1.5rem, 1.7417355372rem + -0.9917355372vw, 0.75rem);
   display: flex;
@@ -379,6 +389,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.3125rem, 1.0103305785rem + 1.2396694215vw, 2.25rem);
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -723,6 +734,75 @@ h3 {
 @media (width <= 47.99875rem) {
   .what__body-button {
     right: -2%;
+  }
+}
+
+.features {
+  padding-block: 16.25rem;
+  padding-right: 14.75rem;
+  background: url("../../images/feartures/bg.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 4.375rem;
+}
+@media (width <= 47.99875rem) {
+  .features {
+    padding-block: 5.1875rem;
+    padding-right: 1.5rem;
+    padding-left: 6.25rem;
+    row-gap: 3.5625rem;
+  }
+}
+.features__title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5625rem;
+  padding-right: 10rem;
+}
+@media (width <= 47.99875rem) {
+  .features__title {
+    padding-right: 6.25rem;
+  }
+}
+.features__title-description {
+  text-transform: uppercase;
+}
+.features__title-desc {
+  text-transform: uppercase;
+}
+.features__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25rem;
+}
+.features__body-block {
+  display: flex;
+  align-items: center;
+  column-gap: 1.125rem;
+}
+.features__body-button {
+  width: 0.875rem;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: 0.0625rem solid var(--color-light);
+  border-radius: 50%;
+}
+.features__body-title {
+  color: var(--color-orange);
+}
+.features__body-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+}
+.features__body-description {
+  padding-left: 1.875rem;
+  font-size: clamp(0.9375rem, 0.7561983471rem + 0.7438016529vw, 1.5rem);
+}
+@media (width <= 47.99875rem) {
+  .features__body-description {
+    max-width: 21.875rem;
   }
 }
 

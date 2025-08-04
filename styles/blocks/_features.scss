@@ -1,0 +1,77 @@
+@use '../helpers' as *;
+
+.features {
+    padding-block: rem(260);
+    padding-right: rem(236);
+    background: url('../../images/feartures/bg.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: rem(70);
+
+    @include mobile {
+        padding-block: rem(83);
+        padding-right: rem(24);
+        padding-left: rem(100);
+        row-gap: rem(57);
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(9);
+        padding-right: rem(160);
+
+        @include mobile {
+            padding-right: rem(100);
+        }
+
+        &-description {
+            text-transform: uppercase;
+        }
+
+        &-desc {
+            text-transform: uppercase;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(36);
+
+        &-block {
+            display: flex;
+            align-items: center;
+            column-gap: rem(18);
+        }
+
+        &-button {
+            width: rem(14);
+            aspect-ratio: 1;
+            background-color: transparent;
+            border: rem(1) solid var(--color-light);
+            border-radius: 50%;
+        }
+
+        &-title {
+            color: var(--color-orange);
+        }
+
+        &-desc {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s;
+        }
+
+        &-description {
+            padding-left: rem(30);
+            @include fluid-text(24, 15);
+
+            @include mobile {
+                max-width: rem(350);
+            }
+        }
+    }
+}
+

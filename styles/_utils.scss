@@ -72,3 +72,13 @@
     }
 }
 
+.open {
+    max-height: 500px;
+    transition: max-height 0.5s;
+}
+
+.button-active {
+    background-color: var(--color-light) !important;
+    transition-duration: 0.2s;
+}
+
