@@ -1,0 +1,59 @@
+@use '../helpers' as *;
+
+.system {
+    background: url('../../images/sustem/bg.png') center/cover no-repeat;
+
+    &__title {
+        padding-top: rem(145);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile {
+            padding-top: rem(70)
+        }
+
+        &-description {
+            @include fluid-text(24, 18);
+        }
+
+        &-description,
+        &-title {
+            text-transform: uppercase;
+        }
+    }
+
+    &__body {
+        padding-top: rem(133);
+        padding-bottom: rem(170);
+        padding-left: rem(120);
+
+        @include mobile {
+            padding-top: rem(72);
+            padding-inline: rem(15);
+        }
+
+        &-table {
+            border: rem(1) solid rgb(58, 53, 53);
+        }
+
+        &-cell {
+            padding-inline: rem(20);
+            padding-top: rem(15);
+            padding-bottom: rem(25);
+            border-block: rem(1) solid rgb(58, 53, 53);
+            border-right: rem(1) solid rgb(58, 53, 53);
+        }
+
+        &-title {
+            text-transform: uppercase;
+            color: var(--color-orange);
+        }
+
+        &-description {
+            @include fluid-text(18, 14);
+
+            padding-top: rem(7);
+        }
+    }
+}

@@ -82,3 +82,16 @@
     transition-duration: 0.2s;
 }
 
+.button {
+    padding: rem(16) rem(33);
+    background-color: var(--color-orange);
+    font-size: rem(16);
+    font-weight: 700;
+    border: none;
+    border-radius: rem(4);
+
+    @include hover {
+        transform: scale(1.05);
+    }
+}
+
