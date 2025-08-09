@@ -3,6 +3,7 @@
 .subscribe {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: rem(100);
     padding-top: rem(72);
     background-color: var(--color-dark);
@@ -22,8 +23,10 @@
         padding-left: 0;
     }
 
-    &__img {
-        background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+    &__div {
+        &-img {
+            border-radius: rem(30);
+        }
     }
 
     &__block {
@@ -38,6 +41,7 @@
 
         @include mobile {
             padding-inline: rem(14);
+            padding-bottom: rem(61);
         }
     }
 

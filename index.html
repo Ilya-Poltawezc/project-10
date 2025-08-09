@@ -21,27 +21,27 @@
             <nav class="header__menu" id="show" data-js-modal-list>
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">
+                        <a class="header__menu-link" href="/" data-i18n>
                             MAIN
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">
+                        <a class="header__menu-link" href="/" data-i18n>
                             about
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">
+                        <a class="header__menu-link" href="/" data-i18n>
                             game features
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">
+                        <a class="header__menu-link" href="/" data-i18n>
                             System requirements
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">
+                        <a class="header__menu-link" href="/" data-i18n>
                             quotes
                         </a>
                     </li>
@@ -356,11 +356,13 @@
         </section>
         <section class="subscribe">
             <h2 class="visually-hidden">Subscribe</h2>
-            <img 
-                class="subscribe__img" 
+            <div class="subscribe__div">
+                <img 
+                class="subscribe__div-img" 
                 src="./images/subscribe/image.png" 
                 alt=""
                 width="412" height="655" loading="lazy">
+            </div>
             <div class="subscribe__block">
                     <div class="subscribe__title">
                 <p class="subscribe__title-description">
@@ -385,5 +387,90 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__title">
+            <a class="footer__title-home" href="/">
+                <img 
+                class="footer__title-img" 
+                src="./images/logo footer.png" 
+                alt=""
+                width="90" height="90" loading="lazy">
+            </a>
+            <ul class="footer__title-list">
+                <li class="footer__title-item">
+                        <a class="footer__title-link" href="/">
+                            MAIN
+                        </a>
+                    </li>
+                <li class="footer__title-item">
+                        <a class="footer__title-link" href="/">
+                            about
+                        </a>
+                    </li>
+                <li class="footer__title-item">
+                        <a class="footer__title-link" href="/">
+                            game features
+                        </a>
+                    </li>
+                <li class="footer__title-item">
+                        <a class="footer__title-link" href="/">
+                            System requirements
+                        </a>
+                    </li>
+                <li class="footer__title-item">
+                        <a class="footer__title-link" href="/">
+                            quotes
+                        </a>
+                    </li>
+               </ul>
+               <ul class="footer__title-soc1als">
+                    <li class="footer__title-item">
+                        <a class="footer__title-contacts" href="/" target="_blank">
+                            <svg class="footer__title-svg" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65382 19.1726H2.56282V9.67859H0.517822V6.40559H2.56282V4.44159C2.56282 1.77259 3.71782 0.183594 6.99582 0.183594H9.72582V3.45659H8.02082C6.74282 3.45659 6.65882 3.91459 6.65882 4.76859L6.65382 6.40559H9.74582L9.38382 9.67859H6.65382V19.1726Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__title-item">
+                        <a class="footer__title-contacts" href="/" target="_blank">
+                            <svg class="footer__title-svg" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2138 3.42967C21.4408 3.75167 20.6098 3.96667 19.7388 4.06467C20.6288 3.56467 21.3118 2.77267 21.6338 1.83067C20.7998 2.29267 19.8778 2.62867 18.8958 2.81067C18.1108 2.02467 16.9898 1.53467 15.7508 1.53467C13.3708 1.53467 11.4398 3.34367 11.4398 5.57367C11.4398 5.89067 11.4778 6.19967 11.5518 6.49467C7.96981 6.32567 4.79381 4.71767 2.66781 2.27467C2.29681 2.87167 2.08481 3.56467 2.08481 4.30567C2.08481 5.70567 2.84581 6.94367 4.00181 7.66767C3.29581 7.64567 2.63181 7.46467 2.04981 7.16167C2.04981 7.17967 2.04981 7.19467 2.04981 7.21367C2.04981 9.17067 3.53481 10.8027 5.50681 11.1737C5.14581 11.2657 4.76381 11.3137 4.37181 11.3137C4.09381 11.3137 3.82381 11.2897 3.56081 11.2437C4.10881 12.8467 5.70081 14.0157 7.58681 14.0487C6.11181 15.1317 4.25381 15.7767 2.23381 15.7767C1.88581 15.7767 1.54281 15.7577 1.20581 15.7207C3.11281 16.8657 5.37881 17.5357 7.81281 17.5357C15.7408 17.5357 20.0758 11.3797 20.0758 6.04267C20.0758 5.86667 20.0708 5.69367 20.0628 5.51967C20.9048 4.94967 21.6358 4.23867 22.2138 3.42967Z" fill="white" stroke="black"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__title-item">
+                        <a class="footer__title-contacts" href="/" target="_blank">
+                            <svg class="footer__title-svg" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.61 0.183594H5.98961C3.12627 0.183594 0.799805 2.55085 0.799805 5.4644V12.8973C0.799805 15.8163 3.12627 18.1781 5.98961 18.1781H20.6046C23.4733 18.1781 25.7944 15.8108 25.7944 12.8973V5.4644C25.7998 2.55085 23.4733 0.183594 20.61 0.183594ZM17.0959 9.54779L10.2575 12.8642C10.0731 12.9524 9.86705 12.82 9.86705 12.6103V5.7679C9.86705 5.55821 10.084 5.42578 10.2629 5.51958L17.1013 9.04564C17.3074 9.15048 17.302 9.44846 17.0959 9.54779Z" fill="#FF1313"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__title-item">
+                        <a class="footer__title-contacts" href="/" target="_blank">
+                            <svg class="footer__title-svg" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9602 13.6252V9.5538V0.680176H2.93894L0.811279 2.97688V15.0868H6.13043V18.845H8.47085L11.024 16.1307H17.407L19.9602 13.6252ZM7.40694 13.4165H4.00268C3.76864 13.4165 3.57715 13.2286 3.57715 12.9989V2.76817C3.57715 2.5385 3.76864 2.35059 4.00268 2.35059H17.6197C17.8537 2.35059 18.0452 2.5385 18.0452 2.76817V10.7022C18.0452 10.8171 18.0027 10.9215 17.9229 10.9998L15.5825 13.2965C15.5027 13.3748 15.391 13.4165 15.2793 13.4165H11.3697L8.07183 15.6401C8.00268 15.6871 7.91757 15.7132 7.83247 15.7132C7.76332 15.7132 7.69949 15.6976 7.63566 15.6662C7.49204 15.5932 7.40694 15.4522 7.40694 15.2956V13.4165Z" fill="white"/>
+                                <path d="M13.79 9.76274V5.58691H12.0878V9.76274H13.79ZM9.53465 9.76274V5.58691H7.83252V9.76274H9.53465Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+               </ul>
+        </div>
+        <div class="footer__body">
+            <p class="footer__body-description">
+                © 2018 Outpost Games, Inc. All Rights Reserved
+            </p>
+            <div class="footer__body-block">
+                <a class="footer__body-block--link" href="/">
+                    Privacy Policy 
+                </a>
+                <a class="footer__body-block--link" href="/">
+                    | Terms of Services |
+                </a>
+                <a class="footer__body-block--link" href="/">
+                    Code of Conduct 
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -6,6 +6,7 @@ class Menu {
         button2: '[data-js-menu-button2]',
         button3: '[data-js-menu-button3]',
         list: '[data-js-menu-list]',
+        datai18n: '[data-i18n]',
     }
 
     stateClasses = {
@@ -19,6 +20,7 @@ class Menu {
         this.button2Element = this.rootElement.querySelector(this.selectors.button2)
         this.button3Element = this.rootElement.querySelector(this.selectors.button3)
         this.listElement = this.rootElement.querySelector(this.selectors.list)
+        this.Elements = document.querySelector(this.selectors.datai18n);
         this.bindEvents()
     }
 
@@ -29,6 +31,10 @@ class Menu {
     buttonSwap1 = () => {
         this.buttonElement.textContent = 'FRA'
         this.button1Element.textContent = 'ENG'
+
+        for (let i = 0; i < this.Elements.length; i++) {
+            this.Elements[i].textContent = 'adasda'
+        }
     }
 
     buttonSwap2 = () => {
